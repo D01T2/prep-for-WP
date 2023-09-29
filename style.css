@@ -1,0 +1,598 @@
+/* fonts */
+
+/* font-family: 'Lato', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+/* font-family: 'Playfair Display', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+/* ---------------------------------------------------------- */
+/* setting the variables */
+
+:root {
+
+  /* colors */
+  --dark: #040400;
+  --brown: #5a4230;
+  --red: #53001D;
+  --light-red: #bb0000;
+  --light: #FFC363;
+  --white: #fffdd0;
+
+  --light-red-a: rgba(187, 0, 0, 0.5);
+  --light-a: rgba(255, 150, 0, 0.5);
+  /* fonts */
+  --font-menu: 'Lato', sans-serif;
+  --font-heading: 'Playfair Display', serif;
+
+}
+
+/* ---------------------------------------------------------- */
+
+/*reset*/
+
+* {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0 auto;
+}
+
+body {
+  background: linear-gradient(141deg, var(--red) 0%, var(--light-red) 30%, var(--light) 75%);
+  margin: 0 auto;
+}
+
+header,
+footer {
+  font-family: var(--font-menu);
+}
+
+/* ---------------------------------------------------------- */
+
+
+/* header starts here */
+header {
+  position: relative;
+  font-family: var(--font-menu);
+  padding: 0.5em 0;
+}
+
+.navigation,
+.logo {
+  text-align: center;
+}
+
+.list-item {
+  display: inline;
+  list-style: none;
+}
+
+.list-item a {
+  color: var(--light);
+  text-decoration: none;
+  font-size: 1.5em;
+  margin: 1em;
+}
+
+.list-item a:hover {
+  color: var(--red);
+  border-bottom: 3px solid var(--red);
+}
+
+/* logo  */
+.logo img{
+  width: 200px;
+  padding: 0;
+  margin: 0 0 1em 0;
+  background-color: var(--light);
+  border-radius: 50%;
+}
+
+/* icons  */
+.icons {
+  position: absolute;
+  top: 225px;
+  right: 1em;
+}
+
+.icons a  {
+  font-size: 1.5em;
+  padding: 0.5em;
+  color: var(--light);
+}
+
+.icons a:hover {
+  color: var(--red);
+}
+
+.menu-btn,
+.closebtn {
+  display: none;
+}
+
+/* sticky menu */
+.sticky {
+  position: fixed;
+  top: 1em;
+  width: 100%;
+  padding: 0.5em 0;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+/* header ends here */
+
+/* ---------------------------------------------------------- */
+
+/* main page starts here */
+.container {
+  display: grid;
+  max-width: 1200px;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  margin: 0 auto;
+}
+
+.r-content,
+.w-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  height: 100vh;
+}
+
+.container .r-content h4 {
+  color: var(--red);
+}
+
+.container .w-content h4 {
+  color: var(--light);
+}
+
+.container .r-content h4,
+.container .w-content h4 {
+  font-family: var(--font-menu);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: 0.2em;
+}
+
+.container .r-content h3,
+.container .w-content h3 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 2em;
+  font-style: italic;
+}
+
+.container .r-content h2,
+.container .w-content h2 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 3em;
+}
+
+.container .r-content h4,
+.container .w-content h4,
+.container .r-content h3,
+.container .w-content h3,
+.container .r-content h2,
+.container .w-content h2 {
+  background-image: linear-gradient(to right, var(--light-red), var(--light));
+  -webkit-background-clip: text; 
+  background-clip: text;
+  color: transparent;
+}
+
+.container .r-content p,
+.container .w-content p {
+  font-family: var(--font-menu);
+  font-weight: 400;
+  font-size: 1em;
+  color: var(--white);
+  padding: 2em 0;
+}
+
+.r-bottle,
+.w-bottle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100vh;
+}
+
+.r-bottle img,
+.w-bottle img {
+  height: 70vh;
+}
+/* ---------------------------------------------------------- */
+.second-content h2,
+.third-content h2 {
+  max-width: 1200px;
+  width: 100%;
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 2em;
+  text-align: center;
+  letter-spacing: 0.125em;
+  color: var(--white);
+  padding: 2em 0;
+}
+
+.events,
+.vendors {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: end;  
+}
+
+.events p,
+.vendors p {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.5em;
+  color: var(--light);
+  padding: 2em 1em;
+  margin: 0;
+}
+
+.p-events,
+.p-vendors {
+  text-align: right;
+}
+
+.p-events img,
+.p-vendors img {
+  height: 50%;
+  transform: scaleX(-1);
+  border-radius: 5px;
+}
+/* ---------------------------------------------------------- */
+
+.fourth-content {
+  width: 100%;
+  height: 80vh;
+  background-position: cover;
+  background-image: url(images/tasting.jpg);
+  background-attachment: fixed;
+  margin: 3em auto;
+}
+
+/* ---------------------------------------------------------- */
+
+.fifth-content {
+  margin: 2em 0;
+}
+
+.presentation {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 2em auto;
+}
+
+.presentation-content {
+  width: 50%;
+}
+
+.presentation-content h2 {
+  font-family: var(--font-menu);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1em;
+  color: var(--light-red);
+  margin: 0.5em 0;
+}
+
+.presentation-content h3 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 2em;
+  color: var(--light-red);
+  margin: 0.5em 0;
+}
+
+.presentation-content p {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 1em ;
+  color: var(--light-red);
+  margin: 0.5em 0;
+}
+
+.products-btn a {
+  width: 3em;
+  background-color: var(--red);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--light);
+  padding: 1em 2em;
+  border-radius: 5px;
+  margin: 1em;
+}
+
+/* ---------------------------------------------------------- */
+.flex-products {
+  position: relative;
+  display: flex;
+  height: 30vh;
+  width: 60vw;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+.flex-products::-webkit-scrollbar {
+  display: none;
+}
+
+.arrow {
+  position: absolute;
+  top: 48%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.5s ease; 
+}
+
+.left-arrow {
+  left: 0;
+}
+
+.right-arrow {
+  right: 0;
+}
+
+.left-arrow img,
+.right-arrow img {
+  max-height: 25px;
+  width: 30px;
+}
+
+.flex-products img {
+  height: 30vh;
+  border-radius: 10px; /* Rounded corners on hover */
+  transition: background-color 0.3s ease, border-radius 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.product-r:hover {
+  background-color: var(--light-red-a);
+}
+
+.product-w:hover {
+  background-color: var(--light-a);
+}
+
+/* ---------------------------------------------------------- */
+.awards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  width: 700px;
+  height: 500px;
+  background-image: url(images/award.png);
+  background-size: cover;
+  background-position: center;
+  margin: 3em auto;
+}
+
+.awards h2 {
+  font-family: var(--font-menu);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1em;
+  color: var(--light-red);
+}
+
+.awards p {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 2em;
+  color: var(--light-red);
+  text-wrap: balance;
+  text-align: center;
+}
+
+
+/* main page ends here */
+
+/* ---------------------------------------------------------- */
+
+
+/* footer starts here */
+
+footer .navigation .nav-list .list-item:first-child{
+  font-size: 1.5em;
+  padding: 0.5em;
+  color: var(--red);
+}
+
+footer .navigation .nav-list {
+  background: linear-gradient(-15deg, var(--light-red) 11%, var(--light) 85%);
+}
+
+footer .navigation .nav-list .list-item a {
+  font-size: 1.5em;
+}
+
+/* footer ends here */
+
+/* ---------------------------------------------------------- */
+
+@media (max-width: 960px) {
+   /* header */
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* --------------------------------- */
+
+  /* navigation */
+  .navigation {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--dark);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .nav-list {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .navigation .nav-list .list-item a {
+    text-decoration: none;
+    color: var(--light);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .navigation .nav-list .list-item a:hover,
+  .navigation .nav-list .list-item a:focus {
+    color: var(--light-red);
+  }
+  
+  .navigation .nav-list .list-item .closebtn {
+    text-decoration: none;
+    font-size: 50px;
+    padding: 0;
+  }
+
+  .menu-btn {
+    cursor: pointer;
+    display: block;
+    color: var(--light);
+    font-size: 30px;
+    position: absolute;
+    top: 7.2em;
+    right: 0.5em;
+  }
+
+  header .icons {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+  }
+  /* --------------------------------- */
+
+  .logo img {
+    padding: 0;
+    margin: 0;
+  }
+  /* --------------------------------- */
+
+  .icons {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+  }
+  /* --------------------------------- */
+
+  .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  .r-content,
+  .w-content {
+    padding: 1em 1em 0 1em;
+    height: fit-content;
+  }
+
+  /* --------------------------------- */
+  .events {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2em;
+  }
+
+  .events,
+  .vendors {
+    text-align: center;
+    text-wrap: balance;
+  }
+
+  .p-events img,
+  .p-vendors img {
+    width: 80vw;
+  }
+
+  .third-content {
+    border-top: 2px dotted var(--brown);
+    margin-top: 2em;
+  }
+
+  .vendors {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2em;
+  }
+  
+  /* --------------------------------- */
+
+  .presentation {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .flex-products {
+    width: 90vw;
+  }
+
+  /* --------------------------------- */
+
+  .awards {
+    max-width: 250px;
+  }
+
+  /* --------------------------------- */
+  /* footer */
+  footer .navigation {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer .navigation .nav-list .list-item {
+    padding: 0;
+    margin: 0;
+  }
+
+  footer .navigation .nav-list .list-item a {
+    padding: 0;
+    margin: 0.7em;
+  }
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Wine-Shop</title>
+</head>
+<body>
+    <header>
+      <div class="logo">
+        <img src="images/logo.png" alt="logo">
+      </div>
+      <nav id="menu" class="navigation">
+        <ul class="nav-list">
+          <li class="list-item"><a href="">Home</a></li>
+          <li class="list-item"><a href="">Products</a></li>
+          <li class="list-item"><a href="">Events</a></li>
+          <li class="list-item"><a href="">Subscription</a></li>
+          <li class="list-item"><a href="">Contact</a></li>
+          <li class="list-item"><a href="#" class="closebtn" onclick="closeNav()">&times;</a></li>
+        </ul>  
+      </nav>
+      <div class="icons">
+        <a href="#"><i class="fa fa-search"></i></a> 
+        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+        <a href="#"><i class="fa fa-user"></i></a>
+      </div>
+      <div class="menu-btn">
+        <span onclick="openNav()">&#9776;</span>
+      </div>
+    </header>
+
+    <section class="first-content">
+      
+      <div id="redContainer" class="container" >
+
+        <div class="r-content">
+
+          <h4>- Varieties -</h4>
+          <h3>The Reds</h3>
+          <h2>Collection</h2>
+          <p>Explore the rich flavors of our red wine collection and indulge in a sensory journey like no other.</p>
+
+        </div>
+
+        <div class="r-bottle">
+
+          <img src="images/display-red-wine.png" alt="The most delicious bottle of red wine from Chateau Haut Gaudin">
+
+        </div>
+
+      </div>
+
+      <div id="whiteContainer" class="container">
+
+        <div class="w-content">
+
+          <h4>- Varieties -</h4>
+          <h3>The Whites</h3>
+          <h2>Collection</h2>
+          <p>Unwind with a glass of our exquisite white wines and discover a world of refreshing flavors and aromas.</p>
+
+        </div>
+
+        <div class="w-bottle">
+
+          <img src="images/display-white-wine.png" alt="The most delicious bottle of red wine from Chateau Margaux Pavillon Blanc">
+
+        </div>
+
+      </div>
+
+    </section>
+  
+    <section class="second-content">
+
+      <h2>With us you can taste and learn more... </h2>
+
+      <div class="events">
+        <p>Passionate about the beautiful wine-growing landscapes and tasting the most delicious wine, we specialize in collecting and serving exceptional wines that takes you on an exceptional journey.</p>
+
+        <div class="p-events">
+            <img src="images/event1.png" alt="">
+        </div>
+      </div>
+
+    </section>
+
+    <section class="third-content">
+
+      <h2>The Vendors</h2>
+
+      <div class="vendors">
+
+        <div class="p-vendors">
+          <img src="images/wine-collection.png" alt="">
+        </div>
+
+        <p>Our vendors are carefully selected by our dedicated team to ensure the highest standards of quality and reliability. We take pride in partnering with suppliers who share our commitment to excellence and customer satisfaction. Through a rigorous evaluation process, we assess their products, services, and ethical practices to guarantee that our customers receive nothing but the best. Our valued vendors play a vital role in delivering the exceptional experience our clients deserve, and we continuously collaborate to meet and exceed their expectations.</p>
+
+      </div>
+
+    </section>
+    
+    <div class="fourth-content"></div>
+
+    <section class="fifth-content">
+      <div class="presentation">
+        <div class="presentation-content">
+          <h2>our wines</h2>
+          <h3>Lastest releases</h3>
+          <p>We invite you to indulge in our award-winning wines and experience the passion and dedication that goes into every sip. Whether you're celebrating a special occasion or simply relaxing at home, our wines are the perfect accompaniment to any moment.</p>
+        </div>
+        <div class="products-btn">
+          <a href="#">View all</a>
+        </div>
+      </div>
+
+      <div class="flex-products">
+        <div class="arrow left-arrow"><img src="images/icons/left-arrow.png" alt="left arrow"></div>
+        <img class="product-r" src="images/bottle-red.png" alt="">
+        <div id="image-container">
+          <!-- Images will be appended here -->
+        </div>
+        <img class="product-w" src="images/bottle-white.png" alt="">
+        <div class="arrow right-arrow"><img src="images/icons/right-arrow.png" alt="right arrow"></div>
+      </div>
+      
+    </section>
+
+    <section class="sixth-content">
+
+      <div class="awards">
+
+        <h2>Awarded Wines</h2>
+        <p>We are proud to announce that all of our wines have been awarded for their exceptional taste and quality.</p>
+
+      </div>
+
+    </section>
+
+
+    <footer>
+      <nav class="navigation">
+        <ul class="nav-list">
+          <li class="list-item">&copy Marian Enea</li>
+          <li class="list-item"><a href="#">Imprint</a></li>
+          <li class="list-item"><a href="#">Data Protection</a></li>
+          <li class="list-item"><a href="#top">Top</a></li>
+        </ul>
+      </nav>
+    </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
